@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>CSE 160: Assignment 2 - Blocky Animal (Nuha Fakrudeen, nfakrude@ucsc.edu)</title>
+</head>
+
+<body onload="main()">
+  <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+  </canvas>
+
+  <p id="numdot"> XXX </p>
+
+  <h1>CSE 160: Assignment 2 - Blocky Animal (Nuha Fakrudeen, nfakrude@ucsc.edu)</h1>
+
+  <p>
+    Left Leg<input type="range" min="-45" max="45" value="0" class="slider" id="RightLegSlide">
+    Animation:
+    <button type="button" id="animationRightLegOnButton">ON</button>
+    <button type="button" id="animationRightLegOffButton">OFF</button>
+  </p>
+
+  <p>
+    Left Paw <input type="range" min="-45" max="45" value="0" class="slider" id="RightPawSlide">
+    Animation:
+    <button type="button" id="animationRightLegPawOnButton">ON</button>
+    <button type="button" id="animationRightLegPawOffButton">OFF</button>
+  </p>
+
+  <p>
+    Right Leg<input type="range" min="-45" max="45" value="0" class="slider" id="LeftLegSlide">
+    Animation:
+    <button type="button" id="animationLeftLegOnButton">ON</button>
+    <button type="button" id="animationLeftLegOffButton">OFF</button>
+  </p>
+
+  <p>
+    Right Paw <input type="range" min="-45" max="45" value="0" class="slider" id="LeftPawSlide">
+    Animation:
+    <button type="button" id="animationLeftPawOnButton">ON</button>
+    <button type="button" id="animationLeftPawOffButton">OFF</button>
+  </p>
+  
+  <p>
+    Arm<input type="range" min="-45" max="90" value="0" class="slider" id="armSlide">
+    Animation:
+    <button type="button" id="animationArmOnButton">ON</button>
+    <button type="button" id="animationArmOffButton">OFF</button>
+  </p>
+  <p>
+    Camera Angle <input type="range" min="-90" max="90" value="5" class="slider" id="angleSlide">
+  </p>
+
+  <p>
+    Grader's Note: n/a
+  </p>
+  <script src="lib/webgl-utils.js"></script>
+  <script src="lib/webgl-debug.js"></script>
+  <script src="lib/cuon-utils.js"></script>
+  <script src="lib/cuon-matrix.js"></script>
+  <script src="Triangle.js"></script>
+  <script src="Circle.js"></script>
+  <script src="Point.js"></script>
+  <script src="Cube.js"></script>
+  <script src="Prism.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
