@@ -477,3 +477,24 @@ function sendTextToHTML(text, htmlID) {
   }
   hteml.innerHTML = text;
 }
+
+canvas.addEventListener("mousedown", function (event) {
+    isMouseDown = true;
+    lastMouseX = event.clientX;
+});
+
+canvas.addEventListener("mouseup", function () {
+    isMouseDown = false;
+});
+
+canvas.addEventListener("mouseleave", function () {
+    isMouseDown = false;
+});
+
+canvas.addEventListener("mousemove", function (event) {
+    if (!isMouseDown) return;
+    const deltaX = event.clientX - lastMouseX;
+    g_globalAngle += deltaX; 
+    lastMouseX = event.clientX;
+    renderScene();
+});
